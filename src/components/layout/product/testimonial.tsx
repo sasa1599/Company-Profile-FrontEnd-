@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { IoIosStar } from "react-icons/io";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -78,18 +78,15 @@ export default function TestimonialPage() {
     return () => clearTimeout(timer);
   }, [currentIndex]);
 
-  const handleNext = () => {
+  const handleNext = () =>
     setCurrentIndex((currentIndex + 1) % testimonials.length);
-  };
-
-  const handlePrev = () => {
+  const handlePrev = () =>
     setCurrentIndex(
       (currentIndex - 1 + testimonials.length) % testimonials.length
     );
-  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-100 via-blue-100 to-yellow-100 py-12 px-6">
+    <section className="min-h-screen bg-gradient-to-b from-pink-100 via-blue-100 to-yellow-100 py-12 px-6">
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
           What Our Customers Say
@@ -115,13 +112,14 @@ export default function TestimonialPage() {
                 <IoIosStar
                   key={starIndex}
                   className="text-yellow-400 text-xl"
+                  aria-hidden="true"
                 />
               ))}
             </div>
             <div className="w-24 h-24 mb-4">
               <Image
                 src={item.src}
-                alt={item.name}
+                alt={`Testimonial from ${item.name}`}
                 height={200}
                 width={200}
                 className="w-full h-full object-cover rounded-full shadow-lg"
@@ -136,17 +134,19 @@ export default function TestimonialPage() {
         ))}
         <button
           onClick={handlePrev}
+          aria-label="Previous Testimonial"
           className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-pink-300 hover:bg-pink-400 text-white p-2 rounded-full transition duration-300"
         >
           ‹
         </button>
         <button
           onClick={handleNext}
+          aria-label="Next Testimonial"
           className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-pink-300 hover:bg-pink-400 text-white p-2 rounded-full transition duration-300"
         >
           ›
         </button>
       </div>
-    </div>
+    </section>
   );
 }
