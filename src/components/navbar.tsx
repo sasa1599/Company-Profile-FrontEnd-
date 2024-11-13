@@ -10,37 +10,30 @@ export function Navbar() {
   return (
     <nav className="absolute top-0 right-0 w-full flex items-center justify-center px-8 py-4 bg-transparent z-20">
       <div className="flex items-center space-x-6">
-        <div className="text-[25px] hidden md:flex space-x-4">
-          <Link
-            href="/"
-            className="text-white font-bold hover:text-blue-400"
-            aria-current="page"
-          >
+        <div className="text-[22px] hidden md:flex space-x-4">
+          <Link href="/" className="text-white font-bold hover:text-blue-400" aria-current="page">
             Home
           </Link>
-          <Link
-            href="/about"
-            className="text-white font-bold hover:text-blue-400"
-          >
+          <Link href="/about" className="text-white font-bold hover:text-blue-400">
             About Us
           </Link>
         </div>
         <div className="flex flex-col items-center mx-4">
-          <Image src="/Logo.png" width={80} height={40} alt="Agricore Logo" />
-          <span className="text-xl font-semibold text-white">Agricore</span>
+          <Image
+            src="/Logo.png"
+            width={80}
+            height={40}
+            alt="Agricore Logo"
+            priority 
+            className="w-[64px] h-[32px] md:w-[80px] md:h-[40px]" 
+          />
+          <span className="text-lg md:text-xl font-semibold text-white">Agricore</span>
         </div>
-
-        <div className="text-[25px] hidden md:flex space-x-4">
-          <Link
-            href="/product"
-            className="text-white font-bold hover:text-blue-400"
-          >
+        <div className="text-[22px] hidden md:flex space-x-4">
+          <Link href="/product" className="text-white font-bold hover:text-blue-400">
             Product
           </Link>
-          <Link
-            href="/team"
-            className="text-white font-bold hover:text-blue-400"
-          >
+          <Link href="/team" className="text-white font-bold hover:text-blue-400">
             Our Team
           </Link>
         </div>
@@ -49,7 +42,7 @@ export function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-white focus:outline-none"
-          aria-label="Read more about navbar"
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
         >
           <svg
             className="w-8 h-8"

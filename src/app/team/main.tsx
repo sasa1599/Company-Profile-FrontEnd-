@@ -20,7 +20,7 @@ export default function TeamPage() {
     "Special Projects Supervisor",
     "Facilities Manager",
     "Financial Officer",
-    "After-Sales Manager"
+    "After-Sales Manager",
   ];
 
   const getData = async () => {
@@ -28,7 +28,7 @@ export default function TeamPage() {
       const result = await axios.get("https://randomuser.me/api/?results=10");
       setMembers(result.data.results);
     } catch (err) {
-      console.log(err);
+      console.error("Failed to load members data", err);
     }
   };
 
@@ -57,27 +57,38 @@ export default function TeamPage() {
   );
 }
 
-function MemberCard({ value, position }: { value: IMembers; position: string }) {
+function MemberCard({
+  value,
+  position,
+}: {
+  value: IMembers;
+  position: string;
+}) {
   return (
     <div className="relative group rounded-lg overflow-hidden shadow-lg bg-white transition-transform transform hover:-translate-y-2 text-center w-full max-w-[250px] mx-auto">
       <Image
         src={value.picture.large}
-        alt="thumbnail"
-        width={300}
-        height={300}
-        className="w-full h-[300px] object-cover rounded-t-lg"
+        alt={`${value.name.first} ${value.name.last}'s photo`}
+        width={250}
+        height={250}
+        className="w-full h-[250px] object-cover rounded-t-lg"
+        loading="lazy"
       />
       <div className="text-center text-lg font-semibold text-gray-600 bg-gray-100 py-2">
         {position}
       </div>
       <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-green-600 bg-opacity-80 text-white text-center p-4 transition-opacity duration-500 ease-in-out">
-        <p className="text-xl font-bold">{value.name.first} {value.name.last}</p>
+        <p className="text-xl font-bold">
+          {value.name.first} {value.name.last}
+        </p>
         <p className="text-base">{value.email}</p>
         <p className="text-base">{value.cell}</p>
         <p className="text-base">{value.location.city}</p>
       </div>
       <div className="text-center mt-4">
-        <p className="text-2xl font-semibold text-gray-800">{value.name.title}. {value.name.first} {value.name.last}</p>
+        <p className="text-xl font-semibold text-gray-800">
+          {value.name.title}. {value.name.first} {value.name.last}
+        </p>
       </div>
     </div>
   );
