@@ -10,7 +10,7 @@ import EnvironmentPage from "@/components/layout/about/sustainability";
 export default function AboutPage() {
   return (
     <div>
-      <div className="bg-aboutImg bg-cover bg-center h-[300px] relative"></div>
+      <div className="bg-aboutImg bg-cover bg-center h-[300px] relative inset-0 bg-black opacity-75"></div>
       <div>
         <NavbarAbout />
         <LogoAboutUs />

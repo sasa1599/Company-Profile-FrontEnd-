@@ -8,9 +8,9 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 w-full flex items-center justify-center px-8 py-4 bg-transparent z-20">
+    <nav className="absolute top-0 right-0 w-full flex items-center justify-center px-8 py-4 bg-transparent z-20">
       <div className="flex items-center space-x-6">
-        <div className=" text-[20px] hidden md:flex space-x-4">
+        <div className="text-[25px] hidden md:flex space-x-4">
           <Link
             href="/"
             className="text-white font-bold hover:text-blue-400"
@@ -30,7 +30,7 @@ export function Navbar() {
           <span className="text-xl font-semibold text-white">Agricore</span>
         </div>
 
-        <div className="text-[20px] hidden md:flex space-x-4">
+        <div className="text-[25px] hidden md:flex space-x-4">
           <Link
             href="/product"
             className="text-white font-bold hover:text-blue-400"
@@ -67,27 +67,31 @@ export function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-green-700 text-center py-4 md:hidden">
+        <div className="absolute top-16 right-0 w-full bg-green-700 text-center py-4 md:hidden">
           <Link
             href="/"
+            onClick={() => setIsOpen(false)}
             className="block text-white font-bold py-2 hover:text-blue-400"
           >
             Home
           </Link>
           <Link
             href="/about"
+            onClick={() => setIsOpen(false)}
             className="block text-white font-bold py-2 hover:text-blue-400"
           >
             About Us
           </Link>
           <Link
             href="/product"
+            onClick={() => setIsOpen(false)}
             className="block text-white font-bold py-2 hover:text-blue-400"
           >
             Product
           </Link>
           <Link
             href="/team"
+            onClick={() => setIsOpen(false)}
             className="block text-white font-bold py-2 hover:text-blue-400"
           >
             Our Team

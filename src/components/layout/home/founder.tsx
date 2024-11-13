@@ -20,7 +20,6 @@ export function FounderPage() {
             className="w-full max-w-xl h-[400px] object-cover rounded-lg shadow-xl"
           />
         </div>
-
         <div className="text-center md:text-left flex-1 relative z-20 mt-4 md:mt-0">
           <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
             &quot;Our founder Shania Azzahra has a background as an agricultural

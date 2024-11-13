@@ -11,9 +11,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        bannerImg: "url('/hero2.png')",
+        bannerImg: "url('/hero2 (1) (1).png')",
         historyImg: "url('/History.jpeg')",
-        aboutImg:"url('/about-navbar.png')",
+        aboutImg:"url('/about-navbar (1) (1).png')",
         aboutusImg:"url('/hero.jpeg')",
         'earth-tone-gradient': 'linear-gradient(135deg, #a67f59, #c9a66b, #826a4a, #b5895d, #8b956d)',
         teamImg: "url('/team2.webp')",

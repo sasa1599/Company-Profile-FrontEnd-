@@ -35,7 +35,7 @@ export function HistoryPage() {
         <div className="mt-6">
           <Link 
             href="/about" 
-            className="flex items-center text-2xl font-semibold text-green-800 hover:text-green-600 transform transition-all duration-300 gap-2"
+            className="flex items-center text-3xl font-semibold text-green-500 hover:text-green-300 transform transition-all duration-300 gap-2"
           >
             <span>About Us</span>
             <span className="text-xl transform transition-transform duration-300 group-hover:translate-x-2">→</span>

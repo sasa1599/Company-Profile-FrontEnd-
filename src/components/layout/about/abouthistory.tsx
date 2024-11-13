@@ -29,7 +29,7 @@ const historyItems = [
     desc: "Not only in the agricultural and livestock aspects, the founder expanded his reach to fisheries, especially to fish that are popular in the community such as catfish and tilapia. Fish farming is done in a bucket in front of the house yard, still on a small scale.",
   },
   {
-    src: "/our4.jpg",
+    src: "/our4 (2) (1).jpg",
     year: "2023",
     text: "Farmland expansion",
     desc: "In mid-2023, the founder expanded the scale of the business in agriculture. Land with an area of ​​20,000 square meters or 2 Ha.",

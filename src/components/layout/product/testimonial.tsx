@@ -68,7 +68,7 @@ const testimonials = [
 
 export default function TestimonialPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const delay = 1000;
+  const delay = 2500;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -98,7 +98,6 @@ export default function TestimonialPage() {
           Discover why our customers love our fresh products!
         </p>
       </div>
-
       <div className="relative max-w-md mx-auto">
         {testimonials.map((item, index) => (
           <div

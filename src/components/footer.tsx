@@ -29,7 +29,6 @@ function Footer() {
           Our Team
         </Link>
       </nav>
-
       <nav className="mb-8">
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 justify-center gap-6">
           <Link
