@@ -49,6 +49,7 @@ export function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-white focus:outline-none"
+          aria-label="Read more about navbar"
         >
           <svg
             className="w-8 h-8"

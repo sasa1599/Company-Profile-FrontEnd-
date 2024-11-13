@@ -14,7 +14,7 @@ export function ServicePage() {
         </p>
         <p className="text-black mt-4">
           We are a start-up specializing in{" "}
-          <span className="text-red-500 font-semibold underline">
+          <span className="text-red-700 font-semibold underline">
             modern environmentally friendly
           </span>{" "}
           farming.
@@ -30,7 +30,7 @@ export function ServicePage() {
             height={250}
             className="w-auto h-[100px] object-cover rounded-lg mb-4"
           />
-          <h3 className="text-black font-semibold text-lg">Fresh Fish Today and Tomorrow</h3>
+          <p className="text-black font-semibold text-xl">Fresh Fish Today and Tomorrow</p>
           <p className="text-gray-700 mt-2">
             We are implementing various fish management programs that meet local standards—from catching, preparing, storing, to processing.
           </p>
@@ -44,7 +44,7 @@ export function ServicePage() {
             height={250}
             className="w-auto h-[100px] object-cover rounded-lg mb-4"
           />
-          <h3 className="text-black font-semibold text-lg">Growing Chicken High Quality Meat</h3>
+          <p className="text-black font-semibold text-xl">Growing Chicken High Quality Meat</p>
           <p className="text-gray-700 mt-2">
             We only sell quality chicken meat from healthy chickens according to local standards, from seeds, nutritious feed, Islamic standard cutting, to storage.
           </p>
@@ -58,7 +58,7 @@ export function ServicePage() {
             height={250}
             className="w-auto h-[100px] object-cover rounded-lg mb-4"
           />
-          <h3 className="text-black font-semibold text-lg">Good Product Live Longer</h3>
+          <p className="text-black font-semibold text-xl">Good Product Live Longer</p>
           <p className="text-gray-700 mt-2">
             Signs of freshness such as bright, lively color. The excellence and character of our products start with our professional management care.
           </p>

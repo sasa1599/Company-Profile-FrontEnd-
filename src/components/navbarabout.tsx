@@ -60,6 +60,7 @@ export default function NavbarAbout() {
           <button
             className="md:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Read more about navbar"
           >
             <svg
               className="w-6 h-6"

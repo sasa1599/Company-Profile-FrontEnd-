@@ -24,9 +24,10 @@ export function HeroPage() {
             </p>
             <a
               href="/about"
+              
               className="bg-yellow-600 text-white font-semibold px-6 py-3 rounded-md transition-all inline-block hover:scale-105"
             >
-              Learn More
+              Learn About Us
             </a>
           </div>
         </div>

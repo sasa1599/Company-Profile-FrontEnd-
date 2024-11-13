@@ -33,6 +33,7 @@ function Footer() {
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 justify-center gap-6">
           <Link
             href="https://twitter.com"
+            aria-label="Twitter Link"
             target="_blank"
             className="text-2xl hover:text-blue-400 text-center"
           >
@@ -48,6 +49,7 @@ function Footer() {
           </Link>
           <Link
             href="https://www.instagram.com"
+            aria-label="Instagram Link"
             target="_blank"
             className="text-2xl hover:text-pink-500 text-center"
           >
@@ -63,6 +65,7 @@ function Footer() {
           </Link>
           <Link
             href="https://www.facebook.com"
+            aria-label="Facebook Link"
             target="_blank"
             className="text-2xl hover:text-blue-600 text-center"
           >

@@ -18,6 +18,7 @@ export default async function Home() {
             >
               <div className="relative">
                 <Image
+                  loading="lazy"
                   src={`https:${item.fields.thumbnail.fields.file.url}`}
                   alt={item.fields.title}
                   width={500}

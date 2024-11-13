@@ -14,6 +14,7 @@ export function FounderPage() {
         <div className="flex-shrink-0 relative z-10">
           <Image
             src="/founder2.jpeg"
+            loading="lazy"
             alt="Founder"
             width={600}
             height={400}
