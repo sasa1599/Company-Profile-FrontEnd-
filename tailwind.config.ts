@@ -17,7 +17,7 @@ const config: Config = {
         aboutusImg:"url('/hero.jpeg')",
         'earth-tone-gradient': 'linear-gradient(135deg, #a67f59, #c9a66b, #826a4a, #b5895d, #8b956d)',
         teamImg: "url('/team2.webp')",
-        productIMG: "url('/product-background.webp')",
+        productIMG: "url('/product-background(1).webp')",
         
       },
       colors: {
