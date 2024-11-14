@@ -17,12 +17,14 @@ export default async function Home() {
             >
               <div className="relative">
                 <Image
-                  loading="lazy"
+                  loading={index === 0 ? "eager" : "lazy"}
                   src={`https:${item.fields.thumbnail.fields.file.url}`}
                   alt={item.fields.title}
-                  width={400} 
-                  height={400} 
+                  width={400}
+                  height={400}
+                  sizes="(max-width: 768px) 200px, 400px"
                   className="w-full h-[200px] md:h-[250px] object-cover rounded-t-lg"
+                  priority={index === 0}
                 />
                 <span className="absolute top-2 left-2 bg-blue-600 text-white text-xs py-0.5 px-2 rounded-md shadow-md">
                   New

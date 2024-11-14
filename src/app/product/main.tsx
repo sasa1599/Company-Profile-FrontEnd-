@@ -6,7 +6,7 @@ import React from 'react'
 export default function ProductPage() {
   return (
    <div>
-      <div className="bg-productIMG bg-cover bg-center h-[300px] relative inset-0 bg-black/75">
+      <div className="bg-productIMG bg-cover bg-center h-[300px] relative">
       <div className="absolute inset-0 bg-black/55"></div>
       </div>
       <div>

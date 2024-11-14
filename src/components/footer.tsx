@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer footer-center bg-gray-800 text-white rounded-lg py-12 px-6">
       <nav className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <Link
-          href="/contact"
+          href="/"
           className="link link-hover text-lg font-semibold hover:text-orange-500 text-center sm:text-left"
         >
           Home
